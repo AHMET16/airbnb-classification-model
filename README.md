@@ -31,38 +31,49 @@ And finally, they want to know where their consulting service can make the most 
 
 Information from: https://listwithclever.com/research/airbnb-vs-hotels-study/ accessed 7/7/22
 
-Airbnb is becoming the preferred choice of vacationers — 60% of travelers who use both Airbnb and hotels prefer Airbnb over comparable hotels when going on vacation.
+- Airbnb is becoming the preferred choice of vacationers 
+— 60% of travelers who use both Airbnb and hotels prefer Airbnb over comparable hotels when going on vacation.
 68% of business travelers prefer staying in hotels when traveling for work, and they're more likely to have a negative experience at an Airbnb
-Importance of 5 Star Reviews
+
+#### Importance of 5 Star Reviews
+
 AirBnb focuses on exceeding customer expectations, which is why they strictly require that hosts maintain a near perfect rating in order to remain on the service.
 
-Importance of Superhost
-information from https://www.airbnb.com/d/superhost. Accessed 6/16/22
-Advantages:
+#### Importance of Superhost
 
-Superhost badge to stand out among other hosts.
-Customers can filter search results to show only superhosts.
-Requirements:
+- information from https://www.airbnb.com/d/superhost. Accessed 6/16/22
 
-Minimum 4.8 overall rating.
-10 stays over the last year.
-< 1% Cancellation Rate.
-At least 90% Response Rate.
-Reassessed every 3 months.
-Problems with the AirBnb Review Scale
+#### Advantages:
+
+- Superhost badge to stand out among other hosts.
+- Customers can filter search results to show only superhosts.
+#### Requirements:
+
+- Minimum 4.8 overall rating.
+- 10 stays over the last year.
+- < 1% Cancellation Rate.
+- At least 90% Response Rate.
+- Reassessed every 3 months.
+
+#### Problems with the AirBnb Review Scale
+
 The review data is incredibly skewed because Airbnb requires such a high rating. Even though there is a 5 point scale, Anything lower than a 4.8 is seen as "bad".
 
-So while this is technically a 5 point scale (as a reviewer can give 1 - 5 stars, with no partial stars allowed), getting a 4.0 average could result in being de-listed from the service!
+- So while this is technically a 5 point scale (as a reviewer can give 1 - 5 stars, with no partial stars allowed), getting a 4.0 average could result in being de-listed from the service!
+
+
 The major problem with this review system is that airbnb guests often assume that airbnb's review scale functions similarly to a hotel review scale, which also uses 5 stars, with 3 considered average, 4 above average, and 5 star being the best possible experience.
 
 from https://medium.com/@campbellandia/how-to-avoid-the-dreaded-4-star-review-a-guide-for-airbnb-hosts-cdf482d083fe
 
-The problem stems from the fundamental difference in what most people think a 5-star rating system is, and what AirBnB’s system actually is. The vast majority of people think that a 4-star review is perfectly appropriate; Their stay was good, they enjoyed themselves, but your place wasn’t the Vanderbilt Suite at the Plaza. What they don’t understand is that if a listing gets too many 4-star reviews the AirBnB platform begins to send warnings to hosts that their listing will be removed.
+- The problem stems from the fundamental difference in what most people think a 5-star rating system is, and what AirBnB’s system actually is. The vast majority of people think that a 4-star review is perfectly appropriate; Their stay was good, they enjoyed themselves, but your place wasn’t the Vanderbilt Suite at the Plaza. What they don’t understand is that if a listing gets too many 4-star reviews the AirBnB platform begins to send warnings to hosts that their listing will be removed.
+
+#### The Problem
 
 ![pic1](https://user-images.githubusercontent.com/5207341/204183874-e17a8467-b6c6-4c54-b175-27a21c999bf2.png)
 
 
-###Target: Elite Units
+### Target: Elite Units
 
 - Elite Units: Any Unit with a 4.9-5.0 Overall Rating.
 - 4.9 is still an incredibly high score, and is above thresholds for success (4.8 rating, etc), so it is worth - capturing units with a 4.9 Rating as high performers as well.
@@ -70,7 +81,7 @@ The problem stems from the fundamental difference in what most people think a 5-
 
 
 
-####Choosing Model Evaluation Metrics
+#### Choosing Model Evaluation Metrics
 - My goal is to predict whether a person will get a 4.9-5.0 Airbnb Overall rating.
 - Which is worse?
    Model predicts that a unit is an Elite Unit, but they actually aren't? (more false Positives)
@@ -78,14 +89,14 @@ The problem stems from the fundamental difference in what most people think a 5-
    
    
    
- ####Decision
+ #### Decision
 
 - I want false Positives to be as low as possible.
 - If my model says that a property is an Elite Unit, I want it to be true.
 - If it misses some of the Elite units in the process, that is fine.
 - Therefore, I am most concerned with Precision, balanced out by F1 score.
 
-####Final Model Evaluation: Decision Tree 2
+#### Final Model Evaluation: Decision Tree 2
 
 
 
@@ -102,7 +113,7 @@ The problem stems from the fundamental difference in what most people think a 5-
 
 
 
-####How to use This Model going forward:
+#### How to use This Model going forward:
 
 
 - OPM can take the data from new clients and run this model to determine whether they are performing at 5-Star level or not.
@@ -112,7 +123,7 @@ The problem stems from the fundamental difference in what most people think a 5-
 
 
 
-####Caveats:
+#### Caveats:
 
 - No model is perfect, and this one certainly isn't.
 - This model relies on review scores from the 6 review categories. If you don't have that data, the model does not perform reliably enough to be used.
@@ -125,13 +136,13 @@ The problem stems from the fundamental difference in what most people think a 5-
 
 
 
-####Analysis:
+#### Analysis:
 - Accuracy is by far the most important feature
 - It is 5.5 Times more important than the next features.
 - Value and Cleanliness are also important, but not nearly as much as Accuracy
 - Communication also has importance, but not nearly as much as the others.
 
-####Top Feature Accuracy Score
+#### Top Feature Accuracy Score
 
 
 
@@ -143,7 +154,9 @@ Accuracy is by far the most important feature in my model. Let's look at the rel
 ![pic6](https://user-images.githubusercontent.com/5207341/204184456-a72a5c31-c912-4e11-9b24-5f14b50c5293.png)
 
 
-####Analysis:
+#### Analysis:
+
+
 - There is a linear relationship between the two. Whatever the Accuracy Score is, the Overall Rating will likely be very similar as there is a nearly direct linear relationship.
 - Therefore, focusing on Accuracy is the best way to get 5 Star Reviews.
 - This matches what I found in my research. The most important aspect of renting an AirBnb unit is that the listing is accurate, to ensure that Guest expectations are met.
@@ -155,7 +168,7 @@ Accuracy is by far the most important feature in my model. Let's look at the rel
 - They are less likely to use the instant book feature, although 41% of units with 5.0 accuracy do each.
 
 
-####Questions Answered
+#### Questions Answered
 
 
 Is there a significant advantage to being a Superhost? (is it worth all the effort to get this status and maintain it?)
@@ -175,13 +188,14 @@ Is there a significant advantage to being a Superhost? (is it worth all the effo
 - Most Superhosts are also able to have 10 listings before their Overall Rating Drops below 4.8.
 
 
-####Is there a significant advantage to having Elite Units?
+#### Is there a significant advantage to having Elite Units?
 
 
 ![pic1](https://user-images.githubusercontent.com/5207341/204185520-93d1d0a8-17f4-41f6-bdd5-7e52280e9b7f.png)
 
 
-####Analysis:
+#### Analysis:
+
 - While Elite Units perform slightly better in booking rate, being an Elite unit is the best solution to the negative trend between Overall Rating and Number of Units.
 - As long as you can keep your units performing at the highest levels, there is no limit on how many units you list.
 - The catch is of course, learning how many that you can manage and keep at that level. This is an area where OPMs service will be invaluable!
@@ -192,13 +206,15 @@ Is there a significant advantage to being a Superhost? (is it worth all the effo
 - They are also more likely to be a superhost, and more likely to have less than 5 listings.
 - They are less likely to have high Capacity, or use Instant Book feature, but the differences aren't major.
 
-####Conclusion
+#### Conclusion
+
+
 In my analysis of Airbnb rentals in San Diego California, I found that having a high overall rating (4.9-5.0), as well as having SuperHost status, were both beneficial to success on the platform.
 
 - I also found that Accuracy was the biggest factor in getting a high overall rating, with a nearly 1 to 1 linear relationship.
 - Other important features were Value, Cleanliness, & Communication.
 
-####Key Areas for OPM's AirBnb Host Consulting Service :
+#### Key Areas for OPM's AirBnb Host Consulting Service :
 
 
 
@@ -212,14 +228,16 @@ In my analysis of Airbnb rentals in San Diego California, I found that having a 
 - It doesn't matter if Hosts have all the metrics and analysis to know that their unit deserves 5-star reviews. Their fate is in the hands of the reviewers. If they really care about getting 5 star reviews (and they should since they are critical to success on AirBnb), they need to explain this to their guests.
 
 
-####Further Work
+#### Further Work
 
 
-####Use Natural Language Processing to analyze amenities.
+#### Use Natural Language Processing to analyze amenities.
+
 - This DataSet includes amenities, which would be very benefical to both the model and industry analysis.
 - However, they are all in string format and getting them into a useful format will be time intensive.
 - Get them into a format where they can be one-hot encoded and fed into the model.
-####Increase the scope of this model.
+#### Increase the scope of this model.
+
 - Incorporate data from the rest of California, and then the rest of the US.
 
 
