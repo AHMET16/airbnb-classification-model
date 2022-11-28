@@ -1,6 +1,7 @@
 # airbnb-classification-model
 ### Using Predictive Modeling to Get More 5-Star AirBnb Reviews
-#### Airbnb has revolutionized the hotel and vacation industries by allowing people to easily rent their own houses out to other travelers. However, it can sometimes be hard for Airbnb Hosts to be as successful as they would like to be. The most common question from AirBnb Hosts is "What can I do to get more 5-star reviews and a 5.0 Overall Rating?" This project uses data for the city of San Diego from InsideAirbnb.com to create a model which can predict whether a Rental Unit will get a 4.9-5.0 Overall Rating with 83% Precision.
+
+Airbnb has revolutionized the hotel and vacation industries by allowing people to easily rent their own houses out to other travelers. However, it can sometimes be hard for Airbnb Hosts to be as successful as they would like to be. The most common question from AirBnb Hosts is "What can I do to get more 5-star reviews and a 5.0 Overall Rating?" This project uses data for the city of San Diego from InsideAirbnb.com to create a model which can predict whether a Rental Unit will get a 4.9-5.0 Overall Rating with 83% Precision.
 
 ![pic2](https://user-images.githubusercontent.com/5207341/204183804-510b4855-3811-4afe-ad25-9a5955b4287f.png)
 
