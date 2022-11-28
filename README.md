@@ -11,8 +11,8 @@ Oceanside Property Management is a property management company located in San Di
 
 There have been so many Airbnb hosts reaching out that OPM has decided that AirBnb host consulting could be a good side-business for them. They plan to officially add Airbnb consulting as a service that they provide. In their initial research they found that the top questions that potential clients who wish to utlize this service are:
 
-- 1) "What can I do to get more 5 star ratings?"
-- 2) "Can you help me reach Superhost status? (or maintain Superhost status)
+- 1 "What can I do to get more 5 star ratings?"
+- 2 "Can you help me reach Superhost status? (or maintain Superhost status)
 These questions are understandable because Airbnb puts a huge focus on getting 5 star overall ratings. They also highly publicize the benefits of getting (and maintaining) Superhost status.
 
 Oceanside Property Management has decided that the main focus of their service will be helping clients get more 5 star reviews. Therefore they have tasked me with providing the following:
