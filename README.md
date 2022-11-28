@@ -27,7 +27,7 @@ They also want me to answer the following questions:
 3)What factors are most important in determining a 5 Star Overall Rating? (what aspects should they most focus on)
 And finally, they want to know where their consulting service can make the most impact, so they know which features to market and/or which hosts to market to.
 
-####About AirBnb
+#### About AirBnb
 
 Information from: https://listwithclever.com/research/airbnb-vs-hotels-study/ accessed 7/7/22
 
