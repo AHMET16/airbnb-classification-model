@@ -28,6 +28,7 @@ They also want me to answer the following questions:
 And finally, they want to know where their consulting service can make the most impact, so they know which features to market and/or which hosts to market to.
 
 About AirBnb
+
 Information from: https://listwithclever.com/research/airbnb-vs-hotels-study/ accessed 7/7/22
 
 Airbnb is becoming the preferred choice of vacationers — 60% of travelers who use both Airbnb and hotels prefer Airbnb over comparable hotels when going on vacation.
