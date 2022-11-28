@@ -19,6 +19,7 @@ Oceanside Property Management has decided that the main focus of their service w
 
 - 1)A model that will predict whether a specific rental unit will get a 5 Star Overall score based on other available information.
 - 2)An industry analysis of AirBnb in San Diego. Specifically looking for any insight that they can give to their clients that will give them a leg up on people who don't use their consulting service.
+
 They also want me to answer the following questions:
 
 1)Is there a significant advantage to being a Superhost? (is it worth all the effort to get this status and maintain it?)
