@@ -128,7 +128,7 @@ from https://medium.com/@campbellandia/how-to-avoid-the-dreaded-4-star-review-a-
 - No model is perfect, and this one certainly isn't.
 - This model relies on review scores from the 6 review categories. If you don't have that data, the model does not perform reliably enough to be used.
 - That said, it can be reliably trusted as only 133 records from the test set of 1,953 were incorrectly labeled as being Elite Units when they were, in fact, not. (We aren't worried about the ones that were predicted to be not Elite incorrectly)
-####Top Features
+#### Top Features
 
 
 ![pic5](https://user-images.githubusercontent.com/5207341/204184355-8aab422d-d3d8-487b-9850-a2db5444848d.png)
